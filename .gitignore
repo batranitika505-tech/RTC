@@ -1,9 +1,7 @@
 __pycache__/
 *.py[cod]
-api/__pycache__/
-api/migrations/__pycache__/
-webapp/__pycache__/
-webapp/migrations/__pycache__/
+app/__pycache__/
+app/migrations/__pycache__/
 RTC/__pycache__/
 db.sqlite3
 .vscode/
