@@ -40,6 +40,6 @@ def index(request):
 	if request.user.is_authenticated:
 		cracks = Crack.objects.all()
 		obstacles = Obstacle.objects.all()
-		render(request, 'index.html', {'cracks': cracks, 'obstacles': obstacles})
+		return render(request, 'index.html', {'cracks': cracks, 'obstacles': obstacles})
 	else:
-		redirect('login')
+		return redirect('login')
