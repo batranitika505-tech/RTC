@@ -17,9 +17,11 @@
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li>
-					<button class="btn waves-effect waves-light">
-						Logout<i class="material-icons right"></i>
-					</button>
+					<a href="{% url 'logout' %}" style="background-color: transparent;">
+						<button class="btn waves-effect waves-light">
+							Logout<i class="material-icons right"></i>
+						</button>
+					</a>
 				</li>
 			</ul>
 		</div>
