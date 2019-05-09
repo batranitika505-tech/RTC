@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'RTC.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'mydb',
+        'USER': 'varun',
+        'PASSWORD': 'Regervix9',
+        'HOST': 'rtc.database.windows.net',
+        'PORT': '',
     }
 }
 
