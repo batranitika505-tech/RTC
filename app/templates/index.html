@@ -49,7 +49,7 @@
 						<td>{{ crack.id }}</td>
 						<td>{{ crack.date }}</td>
 						<td>{{ crack.time }}</td>
-						<td>{{ crack.location }}</td>
+						<td><a href="https://www.google.com/maps/search/?api=1&query={{ crack.location }}">{{ crack.location }}</a></td>
 					</tr>
 					{% endfor %}
 				</tbody>
@@ -71,7 +71,7 @@
 						<td>{{ obstacle.id }}</td>
 						<td>{{ obstacle.date }}</td>
 						<td>{{ obstacle.time }}</td>
-						<td>{{ obstacle.location }}</td>
+						<td><a href="https://www.google.com/maps/search/?api=1&query={{ obstacle.location }}">{{ obstacle.location }}</a></td>
 					</tr>
 					{% endfor %}
 				</tbody>
